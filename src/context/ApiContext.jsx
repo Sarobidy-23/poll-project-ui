@@ -6,6 +6,7 @@ const DataContext = createContext();
 export const useDataProvider = () => useContext(DataContext);
 
 export const DataProvider = ({ children }) => {
+  const [idUser, setIdUser] = useState(1) 
   const [userInfo, setUserInfo] = useState({username:'', token: ''})
   const [isAuthentified, setIsAuthentified] = useState(false);
   const [userToken, setUserToken] = useState('')
@@ -20,7 +21,8 @@ export const DataProvider = ({ children }) => {
     isAuthentified,
     setIsAuthentified,
     client,
-    setUserInfo
+    setUserInfo,
+    idUser
   };
 
   return (
