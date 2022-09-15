@@ -1,14 +1,12 @@
-body{
+.nav__container{
+	position: absolute;
     width: 100vw;
-	margin: 0;
-	padding: 0;
+	height: 100vh;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	min-height: 100vh;
 	font-family: 'Jost', sans-serif;
     background-color: rgb(98, 98, 250);
-
 }
 .main{
 	width: 350px;

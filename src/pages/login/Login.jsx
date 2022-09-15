@@ -21,7 +21,7 @@ const Login = () => {
     }
     
     return (
-        <>
+        <div className="nav__container">
         <div class="main">  	
 		<input type="checkbox" id="check" aria-hidden="true"/>
 			<div class="signup">
@@ -58,7 +58,7 @@ const Login = () => {
 				</form>
 			</div>
 	    </div>
-        </>
+        </div>
     )
 }
 
